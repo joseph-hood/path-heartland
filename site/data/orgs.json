@@ -111,7 +111,7 @@
     "name": "Psychedelic Society of Kansas City",
     "type": "Psychedelic society",
     "color": "#C8361F",
-    "logo": null,
+    "logo": "assets/logos/pskc.webp",
     "description": "A community for education and discussion about psychedelics, offering a safe, inclusive place to learn about psychedelic medicine and share personal stories. Monthly meetups feature keynote speakers from drug policy experts to visionary artists.",
     "website": "https://psychedelickc.org",
     "links": [

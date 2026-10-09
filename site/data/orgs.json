@@ -142,7 +142,7 @@
     "name": "Lawrence Psychedelic Society",
     "type": "Psychedelic society",
     "color": "#E8641C",
-    "logo": null,
+    "logo": "assets/logos/lps.webp",
     "description": "Education, resources, and local support for Kansans interested in psychedelics. Presents the Kansas Consciousness Conference.",
     "website": "https://www.consciouskansas.org",
     "links": [

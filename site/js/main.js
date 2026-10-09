@@ -8,7 +8,6 @@ const load = (name) => fetch(`data/${name}.json`).then((r) => {
 
 const orgBadge = (org, logo = org.logo) =>
   badge({ logo, label: org.short, color: org.color, alt: `${org.name} logo` });
-const hasChapterLogos = (org) => org.locations.some((l) => l.logo);
 const orgPlaces = (org) => org.area ?? org.locations.map((l) => l.name).join(" · ");
 
 function renderPanel(panel, org, li) {
@@ -28,12 +27,6 @@ function renderPanel(panel, org, li) {
     </div>`;
 }
 
-function chapterStrip(org) {
-  return `<ul class="chapters">${org.locations.map((l) => `
-    <li>${orgBadge(org, l.logo)}<span>${esc(l.name.replace(/ chapter.*$/, ""))}</span></li>`).join("")}
-  </ul>`;
-}
-
 function renderMembers(orgs) {
   const panel = document.getElementById("org-panel");
   const mapEl = document.getElementById("map");
@@ -46,13 +39,12 @@ function renderMembers(orgs) {
   grid.innerHTML = orgs.map((org) => `
     <article class="org-card">
       <header>
-        ${hasChapterLogos(org) ? "" : orgBadge(org)}
+        ${orgBadge(org)}
         <div>
           <h3>${esc(org.name)}</h3>
           <p class="org-where">${esc(orgPlaces(org))}</p>
         </div>
       </header>
-      ${hasChapterLogos(org) ? chapterStrip(org) : ""}
       <p>${esc(org.description)}</p>
       <div class="card-actions">
         <a class="pill-link" href="${esc(org.website)}" target="_blank" rel="noopener">Website</a>

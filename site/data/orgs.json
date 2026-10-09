@@ -6,7 +6,7 @@
     "type": "Psychedelic society",
     "area": "Statewide · 4 chapters",
     "color": "#C8361F",
-    "logo": null,
+    "logo": "assets/logos/psoar.webp",
     "description": "Pronounced “SOAR” (the P is silent). A statewide 501(c)(3) promoting education, risk reduction, and community outreach around psychedelics and plant medicine, with local chapters across Arkansas.",
     "website": "https://psoar.org",
     "links": [
@@ -48,7 +48,7 @@
     "name": "Natural State Mental Health",
     "type": "Policy & reform",
     "color": "#1E7A73",
-    "logo": null,
+    "logo": "assets/logos/nsmh.webp",
     "description": "A 501(c)(4) advocacy organization working to pass legislation for regulated, supervised therapeutic access to psychedelic plants in Arkansas.",
     "website": "https://www.naturalstatemh.org",
     "links": [],
@@ -66,7 +66,7 @@
     "name": "Psychedelic Society of the Ozarks",
     "type": "Psychedelic society",
     "color": "#35201B",
-    "logo": null,
+    "logo": "assets/logos/psoto.webp",
     "description": "A Springfield, Missouri 501(c)(3) dedicated to education, community-building, and harm reduction around psychedelics and plant medicine. Hosts the annual Psychedelic Freedom Conference.",
     "website": "https://psychedelicsoto.org",
     "links": [
@@ -88,12 +88,12 @@
     ]
   },
   {
-    "id": "stlps",
+    "id": "pstl",
     "short": "PSTL",
     "name": "Psychedelic STL",
     "type": "Psychedelic society",
     "color": "#1E7A73",
-    "logo": null,
+    "logo": "assets/logos/pstl.webp",
     "description": "A St. Louis community working to build a knowledgeable, safe, and inclusive community around psychedelics as tools for mental wellness, personal growth, and spiritual insight — demystifying psychedelics, educating the public, and advocating for their legal and conscientious use.",
     "website": "https://psychedelicstl.org",
     "links": [],
@@ -165,7 +165,7 @@
     "name": "Oklahoma Psychedelic Collective",
     "type": "Psychedelic collective",
     "color": "#1E7A73",
-    "logo": null,
+    "logo": "assets/logos/opc.webp",
     "description": "A Tulsa 501(c)(3) advancing ethical, evidence-based psychedelic education, research, and therapy. Hosts the Open Plains Psychedelic Symposium, a Psychedelic Salon, and Second Saturday socials.",
     "website": "https://okopc.org",
     "links": [

@@ -33,9 +33,9 @@ All content lives in JSON under `site/data/`. Edit, commit, push to `main` — i
 }
 ```
 
-A location can carry its own `"logo"` (see PSoAR's chapters): the card then shows a row of
-chapter logos, and the info panel shows the logo of whichever chapter was clicked. Map markers
-always use the `short` monogram.
+A location can carry its own `"logo"` (see PSoAR's chapters): the card always shows the
+organization's main logo, and the info panel shows the logo of whichever chapter was clicked.
+Map markers always use the `short` monogram.
 
 Put logos in `site/assets/logos/`. Square SVG, PNG, or WebP (≥256px, transparent background)
 works best; they're shown as-is with no frame. Nearby or shared locations are spread apart
@@ -74,6 +74,20 @@ automatically on the map.
 ```
 
 Upcoming items sort first; past ones are greyed out and labelled "Past".
+
+## Contact form
+
+The Contact section posts to a Google Form. To connect it:
+
+1. Create a Google Form with three **Short answer / Paragraph** questions: Name, Email, Message.
+2. In the form editor: ⋮ menu → **Get pre-filled link**, type anything into each field, click
+   **Get link**, and copy it. It looks like
+   `https://docs.google.com/forms/d/e/<FORM_ID>/viewform?usp=pp_url&entry.111=a&entry.222=b&entry.333=c`.
+3. In `site/js/contact.js`, set `action` to `https://docs.google.com/forms/d/e/<FORM_ID>/formResponse`
+   and map `name`/`email`/`message` to their `entry.NNN` keys.
+
+Responses land in the form's Responses tab (or a linked Sheet; turn on email notifications there).
+Until it's configured, the form shows as disabled with a "not connected yet" note.
 
 ## Map
 

@@ -106,18 +106,9 @@ export function createMap(container, orgs, onSelect) {
       el("circle", { r, class: "marker-base" }, g);
       const body = el("g", { class: "marker-body" }, g);
       el("circle", { r, class: "marker-ring", style: `fill:${org.color}` }, body);
-      if (org.logo) {
-        const clipId = `clip-${org.id}-${li}`;
-        el("circle", { r: r * 0.86 }, el("clipPath", { id: clipId }, body));
-        el("circle", { r: r * 0.86, fill: "#fff" }, body);
-        el("image", {
-          href: org.logo, x: -r * 0.86, y: -r * 0.86, width: r * 1.72, height: r * 1.72,
-          "clip-path": `url(#${clipId})`, preserveAspectRatio: "xMidYMid meet",
-        }, body);
-      } else {
-        const size = Math.min(r * 0.7, (r * 1.45) / (org.short.length * 0.66));
-        el("text", { class: "marker-text", "font-size": size }, body).textContent = org.short;
-      }
+      // Markers stay monograms; logos live on the cards and in the info panel.
+      const size = Math.min(r * 0.7, (r * 1.45) / (org.short.length * 0.66));
+      el("text", { class: "marker-text", "font-size": size }, body).textContent = org.short;
       const pick = () => onSelect(org, li);
       g.addEventListener("click", pick);
       g.addEventListener("keydown", (e) => {

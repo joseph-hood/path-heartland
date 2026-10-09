@@ -24,8 +24,8 @@ All content lives in JSON under `site/data/`. Edit, commit, push to `main` — i
   "name": "Psychedelic Society of Kansas City",
   "type": "Psychedelic society",    // small label: society, collective, church, therapy collective…
   "area": "Statewide · 4 chapters", // optional; replaces the list of location names on the card
-  "color": "#C8361F",               // marker colour when there's no logo
-  "logo": "assets/logos/pskc.svg",  // optional; null → monogram
+  "color": "#C8361F",               // map marker + monogram colour
+  "logo": "assets/logos/pskc.svg",  // optional; shown on the card and info panel. null → monogram
   "description": "One or two sentences.",
   "website": "https://psychedelickc.org",
   "links": [{ "label": "Instagram", "url": "https://…" }],
@@ -33,8 +33,12 @@ All content lives in JSON under `site/data/`. Edit, commit, push to `main` — i
 }
 ```
 
-Put logos in `site/assets/logos/`. Square-ish SVG or PNG (≥256px) with a transparent or white
-background works best; they're shown inside a circle. Nearby or shared locations are spread apart
+A location can carry its own `"logo"` (see PSoAR's chapters): the card then shows a row of
+chapter logos, and the info panel shows the logo of whichever chapter was clicked. Map markers
+always use the `short` monogram.
+
+Put logos in `site/assets/logos/`. Square SVG, PNG, or WebP (≥256px, transparent background)
+works best; they're shown as-is with no frame. Nearby or shared locations are spread apart
 automatically on the map.
 
 ### Speakers — `site/data/speakers.json`
@@ -62,7 +66,10 @@ automatically on the map.
   "tag": "Conference",         // Conference, News, Symposium…
   "title": "…",
   "summary": "…",
-  "url": "https://…"           // optional
+  "location": "Denver, CO",    // optional
+  "url": "https://…",          // optional; links the title
+  "links": [{ "label": "Register", "url": "https://…" }], // optional buttons
+  "featured": true             // optional; pins it to the top with a teal accent while upcoming
 }
 ```
 

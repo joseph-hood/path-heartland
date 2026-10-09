@@ -3,9 +3,21 @@
     "date": "2027-05-03",
     "endDate": "2027-05-07",
     "tag": "Conference",
-    "title": "MAPS Psychedelic Science 2027 — Denver",
-    "summary": "PATH will be at PS2027 with a table representing the heartland’s psychedelic community. Come find us at the Colorado Convention Center.",
-    "url": "https://psychedelicscience.org/"
+    "featured": true,
+    "title": "PATH is tabling at MAPS Psychedelic Science 2027",
+    "location": "Colorado Convention Center · Denver, CO",
+    "summary": "Psychedelic Science 2027 is expected to bring together 8,000+ researchers, clinicians, policymakers, advocates, and cultural leaders around this year’s theme, “Bridging Promise & Practice”: how the field moves from possibility to on-the-ground reality through training, policy, infrastructure, and human relationships. PATH will have a table representing the heartland’s psychedelic community. Stop by to meet the groups in Oklahoma, Missouri, Kansas, and Arkansas, and find out how to get involved closer to home.",
+    "url": "https://psychedelicscience.org/",
+    "links": [
+      {
+        "label": "Conference site",
+        "url": "https://psychedelicscience.org/"
+      },
+      {
+        "label": "MAPS announcement",
+        "url": "https://maps.org/2026/05/14/maps-announces-dates-for-psychedelic-science-2027-early-bird-registrations-now-open/"
+      }
+    ]
   },
   {
     "date": "2026-11-15",

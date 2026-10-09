@@ -84,7 +84,10 @@ The Contact section posts to a Google Form. To connect it:
    **Get link**, and copy it. It looks like
    `https://docs.google.com/forms/d/e/<FORM_ID>/viewform?usp=pp_url&entry.111=a&entry.222=b&entry.333=c`.
 3. In `site/js/contact.js`, set `action` to `https://docs.google.com/forms/d/e/<FORM_ID>/formResponse`
-   and map `name`/`email`/`message` to their `entry.NNN` keys.
+   and map `name`/`email`/`message` to their `entry.NNN` keys. If the form collects email through
+   Settings → Responses → "Collect email addresses: **Responder input**" instead of a question,
+   use `emailAddress` as the email key (that's the current setup). "Verified" won't work — it
+   requires a Google sign-in.
 
 Responses land in the form's Responses tab (or a linked Sheet; turn on email notifications there).
 Until it's configured, the form shows as disabled with a "not connected yet" note.

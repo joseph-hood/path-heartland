@@ -1,8 +1,10 @@
 // Contact form → Google Form. To connect a form, fill these in from the form's
 // "Get pre-filled link" URL (see README → Contact form).
+// "emailAddress" is the form's built-in "Collect email addresses: Responder input"
+// field; the other two are regular questions.
 const GOOGLE_FORM = {
-  action: "", // https://docs.google.com/forms/d/e/<FORM_ID>/formResponse
-  fields: { name: "", email: "", message: "" }, // entry.123456789 etc.
+  action: "https://docs.google.com/forms/d/e/1FAIpQLScplVbFXyTmaiuENyu36KKLFRfzqCxWnY5zs-kX1IPGg6qvTw/formResponse",
+  fields: { name: "entry.831015543", email: "emailAddress", message: "entry.1437877423" },
 };
 
 const form = document.getElementById("contact-form");

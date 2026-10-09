@@ -6,10 +6,9 @@ export const initials = (name) =>
 
 // Logo when we have one, otherwise a coloured monogram.
 export function badge({ logo, label, color, alt = "" }) {
-  const style = color ? ` style="--c:${esc(color)}"` : "";
-  return logo
-    ? `<span class="badge"${style}><img src="${esc(logo)}" alt="${esc(alt)}" loading="lazy"></span>`
-    : `<span class="badge"${style} aria-hidden="true">${esc(label)}</span>`;
+  if (logo) return `<span class="badge has-logo"><img src="${esc(logo)}" alt="${esc(alt)}" loading="lazy"></span>`;
+  const style = `--chars:${label.length}` + (color ? `;--c:${esc(color)}` : "");
+  return `<span class="badge" style="${style}" aria-hidden="true">${esc(label)}</span>`;
 }
 
 export function linkPills(links = []) {

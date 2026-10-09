@@ -10,13 +10,36 @@
     "description": "Pronounced “SOAR” (the P is silent). A statewide 501(c)(3) promoting education, risk reduction, and community outreach around psychedelics and plant medicine, with local chapters across Arkansas.",
     "website": "https://psoar.org",
     "links": [
-      { "label": "Newsletter", "url": "https://psoar.substack.com" }
+      {
+        "label": "Newsletter",
+        "url": "https://psoar.substack.com"
+      }
     ],
     "locations": [
-      { "name": "Bentonville chapter", "lat": 36.3729, "lng": -94.2088 },
-      { "name": "Fayetteville chapter", "lat": 36.0626, "lng": -94.1574 },
-      { "name": "Eureka Springs chapter", "lat": 36.4012, "lng": -93.7379 },
-      { "name": "Central Arkansas chapter · Little Rock", "lat": 34.7465, "lng": -92.2896 }
+      {
+        "name": "Bentonville chapter",
+        "lat": 36.3729,
+        "lng": -94.2088,
+        "logo": "assets/logos/psoar-bentonville.webp"
+      },
+      {
+        "name": "Fayetteville chapter",
+        "lat": 36.0626,
+        "lng": -94.1574,
+        "logo": "assets/logos/psoar-fayetteville.webp"
+      },
+      {
+        "name": "Eureka Springs chapter",
+        "lat": 36.4012,
+        "lng": -93.7379,
+        "logo": "assets/logos/psoar-eureka-springs.webp"
+      },
+      {
+        "name": "Central Arkansas chapter · Little Rock",
+        "lat": 34.7465,
+        "lng": -92.2896,
+        "logo": "assets/logos/psoar-central-ar.webp"
+      }
     ]
   },
   {
@@ -30,7 +53,11 @@
     "website": "https://www.naturalstatemh.org",
     "links": [],
     "locations": [
-      { "name": "Little Rock, AR", "lat": 34.7465, "lng": -92.2896 }
+      {
+        "name": "Little Rock, AR",
+        "lat": 34.7465,
+        "lng": -92.2896
+      }
     ]
   },
   {
@@ -43,11 +70,39 @@
     "description": "A Springfield, Missouri 501(c)(3) dedicated to education, community-building, and harm reduction around psychedelics and plant medicine. Hosts the annual Psychedelic Freedom Conference.",
     "website": "https://psychedelicsoto.org",
     "links": [
-      { "label": "Facebook", "url": "https://www.facebook.com/psychedelicsoto/" },
-      { "label": "Email", "url": "mailto:hello@psychedelicsoto.org" }
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/psychedelicsoto/"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:hello@psychedelicsoto.org"
+      }
     ],
     "locations": [
-      { "name": "Springfield, MO", "lat": 37.2089, "lng": -93.2923 }
+      {
+        "name": "Springfield, MO",
+        "lat": 37.2089,
+        "lng": -93.2923
+      }
+    ]
+  },
+  {
+    "id": "stlps",
+    "short": "STLPS",
+    "name": "Psychedelic STL",
+    "type": "Psychedelic society",
+    "color": "#1E7A73",
+    "logo": null,
+    "description": "A St. Louis community working to build a knowledgeable, safe, and inclusive community around psychedelics as tools for mental wellness, personal growth, and spiritual insight — demystifying psychedelics, educating the public, and advocating for their legal and conscientious use.",
+    "website": "https://psychedelicstl.org",
+    "links": [],
+    "locations": [
+      {
+        "name": "St. Louis, MO",
+        "lat": 38.627,
+        "lng": -90.1994
+      }
     ]
   },
   {
@@ -60,12 +115,25 @@
     "description": "A community for education and discussion about psychedelics, offering a safe, inclusive place to learn about psychedelic medicine and share personal stories. Monthly meetups feature keynote speakers from drug policy experts to visionary artists.",
     "website": "https://psychedelickc.org",
     "links": [
-      { "label": "Bluesky", "url": "https://bsky.app/profile/psychedelickc.org" },
-      { "label": "Facebook", "url": "https://www.facebook.com/61558404059512/" },
-      { "label": "Email", "url": "mailto:info@psychedelickc.org" }
+      {
+        "label": "Bluesky",
+        "url": "https://bsky.app/profile/psychedelickc.org"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/61558404059512/"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:info@psychedelickc.org"
+      }
     ],
     "locations": [
-      { "name": "Kansas City, MO", "lat": 39.0997, "lng": -94.5786 }
+      {
+        "name": "Kansas City, MO",
+        "lat": 39.0997,
+        "lng": -94.5786
+      }
     ]
   },
   {
@@ -78,10 +146,17 @@
     "description": "Education, resources, and local support for Kansans interested in psychedelics. Presents the Kansas Consciousness Conference.",
     "website": "https://www.consciouskansas.org",
     "links": [
-      { "label": "All links", "url": "https://linktr.ee/lawrencepsychedelicsociety" }
+      {
+        "label": "All links",
+        "url": "https://linktr.ee/lawrencepsychedelicsociety"
+      }
     ],
     "locations": [
-      { "name": "Lawrence, KS", "lat": 38.9717, "lng": -95.2353 }
+      {
+        "name": "Lawrence, KS",
+        "lat": 38.9717,
+        "lng": -95.2353
+      }
     ]
   },
   {
@@ -94,10 +169,17 @@
     "description": "A Tulsa 501(c)(3) advancing ethical, evidence-based psychedelic education, research, and therapy. Hosts the Open Plains Psychedelic Symposium, a Psychedelic Salon, and Second Saturday socials.",
     "website": "https://okopc.org",
     "links": [
-      { "label": "Facebook", "url": "https://www.facebook.com/p/Oklahoma-Psychedelic-Collective-61579621130998/" }
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/p/Oklahoma-Psychedelic-Collective-61579621130998/"
+      }
     ],
     "locations": [
-      { "name": "Tulsa, OK", "lat": 36.154, "lng": -95.9928 }
+      {
+        "name": "Tulsa, OK",
+        "lat": 36.154,
+        "lng": -95.9928
+      }
     ]
   }
 ]

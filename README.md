@@ -33,12 +33,14 @@ All content lives in JSON under `site/data/`. Edit, commit, push to `main` — i
 }
 ```
 
-A location can carry its own `"logo"` (see PSoAR's chapters): the card always shows the
-organization's main logo, and the info panel shows the logo of whichever chapter was clicked.
-Map markers always use the `short` monogram.
+A location can carry its own `"logo"` (see PSoAR's chapters): the card and every map marker use
+the organization's main logo, and the info panel shows the logo of whichever chapter was clicked.
+Orgs without a logo get a monogram of `short` in `color`.
 
-Put logos in `site/assets/logos/`. Square SVG, PNG, or WebP (≥256px, transparent background)
-works best; they're shown as-is with no frame. Nearby or shared locations are spread apart
+Put logos in `site/assets/logos/`. Square, circular artwork (≥256px) works best — map markers crop
+to a circle. Dark backgrounds read better on the cream page than white ones. For square logos on a
+solid background, cut a circle first, e.g.:
+`convert in.png -resize 256x256 \( -size 256x256 xc:none -fill white -draw "circle 128,128 128,1" \) -alpha set -compose DstIn -composite out.webp` Nearby or shared locations are spread apart
 automatically on the map.
 
 ### Speakers — `site/data/speakers.json`

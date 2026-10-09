@@ -165,13 +165,13 @@ h3 { font-size: 1.15rem; }
 .map .leader { stroke: var(--cocoa); stroke-width: 1.5; vector-effect: non-scaling-stroke; opacity: .6; }
 .map .pin { fill: var(--cocoa); }
 .map .marker { cursor: pointer; outline: none; }
-.map .marker-ring { fill: #fff; stroke: var(--cocoa); vector-effect: non-scaling-stroke; stroke-width: 2; transition: stroke-width .12s; }
+.map .marker-ring { fill: none; stroke: var(--cocoa); vector-effect: non-scaling-stroke; stroke-width: 2; transition: stroke-width .12s; }
 .map .marker-text { font-family: var(--font-head); font-weight: 700; fill: #fff; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .map .marker:hover .marker-ring,
 .map .marker:focus-visible .marker-ring { stroke-width: 4; }
 .map .marker.is-active .marker-ring { stroke: var(--marigold); stroke-width: 5; }
 .map .marker-base { fill: var(--card); }
-.map .marker.is-dim .marker-body { opacity: 0.45; }
+.map .marker.is-dim .marker-body { opacity: 0.6; }
 
 .org-panel {
   background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);

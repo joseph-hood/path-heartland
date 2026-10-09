@@ -3,7 +3,7 @@ import { esc } from "./util.js";
 
 const SVG_NS = "http://www.w3.org/2000/svg";
 // On-screen marker diameter in CSS px, kept constant as the map scales.
-const badgePx = (width) => (width < 520 ? 28 : 36);
+const badgePx = (width) => (width < 520 ? 32 : 42);
 
 const STATE_LABELS = [
   { name: "Kansas", lat: 38.55, lng: -98.6 },
@@ -105,10 +105,21 @@ export function createMap(container, orgs, onSelect) {
       // Opaque base so a dimmed marker never shows leader lines through it.
       el("circle", { r, class: "marker-base" }, g);
       const body = el("g", { class: "marker-body" }, g);
-      el("circle", { r, class: "marker-ring", style: `fill:${org.color}` }, body);
-      // Markers stay monograms; logos live on the cards and in the info panel.
-      const size = Math.min(r * 0.7, (r * 1.45) / (org.short.length * 0.66));
-      el("text", { class: "marker-text", "font-size": size }, body).textContent = org.short;
+      // Org-level logo for every location (chapter seals are unreadable at this size);
+      // monogram when there's no logo. The ring is drawn last so it frames either.
+      if (org.logo) {
+        const clipId = `clip-${org.id}-${li}`;
+        el("circle", { r }, el("clipPath", { id: clipId }, body));
+        el("image", {
+          href: org.logo, x: -r, y: -r, width: r * 2, height: r * 2,
+          "clip-path": `url(#${clipId})`, preserveAspectRatio: "xMidYMid slice",
+        }, body);
+      } else {
+        el("circle", { r, style: `fill:${org.color}` }, body);
+        const size = Math.min(r * 0.7, (r * 1.45) / (org.short.length * 0.66));
+        el("text", { class: "marker-text", "font-size": size }, body).textContent = org.short;
+      }
+      el("circle", { r, class: "marker-ring" }, body);
       const pick = () => onSelect(org, li);
       g.addEventListener("click", pick);
       g.addEventListener("keydown", (e) => {

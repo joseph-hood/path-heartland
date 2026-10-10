@@ -30,17 +30,16 @@
   {
     "name": "Christine “Mooncat” Ziemer",
     "credentials": "PhD",
+    "photo": "assets/speakers/christine-ziemer.webp",
     "role": "Professor of Psychology, Missouri Western State University",
     "org": "Psychedelic Society of Kansas City",
-    "location": "St. Joseph & Kansas City, MO",
-    "bio": "Tenured professor of psychology at Missouri Western State University, where she created original courses on psychedelics, including Psychedelic Science, which covers how these substances work in the brain, the legal landscape, and risk reduction and peer support. She founded the Psychedelic Educators Network and serves as executive director of the Psychedelic Society of Kansas City. A firm believer that education is harm reduction, she supports peer-support services such as the Fireside Project and Zendo Project and the Kansas City Psychedelic Integration Circle.",
+    "bio": "Dr. Ziemer is a tenured professor of psychology at Missouri Western State University, where they developed original courses in transpersonal psychology and psychedelic science. They founded the Psychedelic Educators Network, a global network of professors and instructors who teach university courses on psychedelics across many fields. They volunteer with the Zendo Project, Fireside Project, and Safe Journeys Sanctum to provide psychedelic peer support, and co-founded the Kansas City Psychedelic Integration Circle and the Psychedelic Society of Kansas City. They also serve on the board of the Heartland Transpersonal Alliance and as a faculty member of Midwest Psychedelic.",
     "topics": [
       "Psychedelic science",
       "Psychedelic education",
-      "Harm reduction",
-      "Peer support & integration",
       "Transpersonal psychology",
-      "Policy & legal issues"
+      "Harm reduction",
+      "Peer support & integration"
     ],
     "links": [
       {
@@ -48,8 +47,16 @@
         "url": "https://psychedelicsoto.org/speaker/dr-christine-mooncat-ziemer/"
       },
       {
-        "label": "KCUR interview",
-        "url": "https://www.kcur.org/podcast/up-to-date/2025-10-18/kansas-citys-psychedelic-society-is-ready-to-change-minds-about-psilocybin"
+        "label": "Psychedelic Society of KC",
+        "url": "https://www.psychedelickc.org"
+      },
+      {
+        "label": "KC Integration Circle",
+        "url": "https://www.kc-psychedelic.com"
+      },
+      {
+        "label": "Psychedelic Educators Network",
+        "url": "https://www.psychedelic-educators-network.com"
       }
     ]
   }

@@ -238,6 +238,9 @@ h3 { font-size: 1.15rem; }
   background: var(--card); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow);
 }
 .speaker-card .badge { --size: 84px; --c: var(--teal); }
+/* Speaker photos are circles with the same frame as the initials placeholder. */
+.speaker-card .badge.has-logo { border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 1.5px var(--cocoa); }
+.speaker-card .badge.has-logo img { object-fit: cover; }
 .speaker-card .speaker-role { margin: 4px 0 0; color: var(--tomato); font-weight: 500; font-size: .95rem; }
 .speaker-card .speaker-bio { margin: 10px 0 12px; color: var(--muted); font-size: .97rem; }
 .speaker-card .topics { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; padding: 0; list-style: none; }

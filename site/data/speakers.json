@@ -2,14 +2,29 @@
   {
     "name": "Chad V. Johnson",
     "credentials": "PhD",
+    "photo": "assets/speakers/chad-v-johnson.webp",
     "role": "Licensed psychologist · Associate Professor, University of Oklahoma",
     "org": "Oklahoma Psychedelic Collective",
     "location": "Tulsa, OK",
     "bio": "Licensed psychologist in Tulsa with more than 25 years of experience in psychotherapy, consultation, training, research, and teaching. He is an Associate Professor in the University of Oklahoma’s Clinical Mental Health Counseling program and a Clinical Assistant Professor of Psychiatry at the OU College of Medicine, where his research focuses on spirituality, psychedelic integration, and advocacy. He holds certificates in psychedelic-assisted therapy and research (CIIS), psychedelic science and medicine (Johns Hopkins), and ketamine-assisted psychotherapy, and is a co-founder of the Oklahoma Psychedelic Collective.",
-    "topics": ["Psychedelic integration", "Harm reduction", "Ketamine-assisted therapy", "Spirituality", "Trauma & PTSD", "Group psychotherapy", "Advocacy"],
+    "topics": [
+      "Psychedelic integration",
+      "Harm reduction",
+      "Ketamine-assisted therapy",
+      "Spirituality",
+      "Trauma & PTSD",
+      "Group psychotherapy",
+      "Advocacy"
+    ],
     "links": [
-      { "label": "Website", "url": "https://www.chadvjohnsonphd.com" },
-      { "label": "Contact", "url": "https://www.chadvjohnsonphd.com/contact" }
+      {
+        "label": "Website",
+        "url": "https://www.chadvjohnsonphd.com"
+      },
+      {
+        "label": "Contact",
+        "url": "https://www.chadvjohnsonphd.com/contact"
+      }
     ]
   }
 ]

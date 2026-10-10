@@ -45,9 +45,16 @@ automatically on the map.
 
 ### Speakers — `site/data/speakers.json`
 
+Speakers appear on their own page, `speakers.html` (the front page has a short summary and a
+button linking to it). The page sorts everyone alphabetically by last name, groups them under
+letter headings, and has a live search box that matches any word in a speaker's entry. A search
+can be linked directly, e.g. `speakers.html?q=harm+reduction`. Order in the JSON doesn't matter.
+
 ```jsonc
 {
-  "name": "Jane Doe",
+  "name": "Jane Doe",                      // plain name, no "Dr."; the last word is used for sorting
+  "sortName": "Doe",                       // optional; only for names like "Juan de la Cruz"
+  "credentials": "PhD, LPC",               // optional; shown after the name
   "photo": "assets/speakers/jane-doe.jpg", // optional; square, ≥300px
   "role": "Clinical psychologist",
   "org": "PSKC",

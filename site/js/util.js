@@ -1,6 +1,17 @@
 const ESC = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
 export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ESC[c]);
 
+export const load = (name) => fetch(`data/${name}.json`).then((r) => {
+  if (!r.ok) throw new Error(`${name}.json: ${r.status}`);
+  return r.json();
+});
+
+export function renderFooterMembers(orgs) {
+  document.getElementById("footer-members").innerHTML = orgs
+    .map((o) => `<li><a href="${esc(o.website)}" target="_blank" rel="noopener">${esc(o.name)}</a></li>`)
+    .join("");
+}
+
 export const initials = (name) =>
   name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join("");
 

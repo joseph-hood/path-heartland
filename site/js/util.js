@@ -12,8 +12,11 @@ export function renderFooterMembers(orgs) {
     .join("");
 }
 
-export const initials = (name) =>
-  name.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0].toUpperCase()).join("");
+// First and last name only, so "Chad V. Johnson" → "CJ".
+export const initials = (name) => {
+  const words = name.split(/\s+/).filter(Boolean);
+  return [words[0], words.length > 1 ? words.at(-1) : ""].filter(Boolean).map((w) => w[0].toUpperCase()).join("");
+};
 
 // Logo when we have one, otherwise a coloured monogram.
 export function badge({ logo, label, color, alt = "" }) {

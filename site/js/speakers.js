@@ -42,9 +42,8 @@ function renderSpeakers(all) {
     const words = input.value.toLocaleLowerCase().split(/\s+/).filter(Boolean);
     const hits = speakers.filter(({ text }) => words.every((w) => text.includes(w)));
 
-    count.textContent = words.length
-      ? `${hits.length} of ${speakers.length} speakers match`
-      : `${speakers.length} speakers`;
+    const total = `${speakers.length} speaker${speakers.length === 1 ? "" : "s"}`;
+    count.textContent = words.length ? `${hits.length} of ${total} match` : total;
 
     if (!hits.length) {
       list.innerHTML = `<div class="empty"><strong>No speakers match “${esc(input.value.trim())}”</strong>
@@ -58,7 +57,7 @@ function renderSpeakers(all) {
       if (hit.letter !== letter) {
         if (letter) html += `</div></section>`;
         letter = hit.letter;
-        html += `<section class="letter-group"><h2 class="letter">${esc(letter)}</h2><div class="speaker-rows">`;
+        html += `<section class="letter-group"><h2 class="letter"><span>${esc(letter)}</span></h2><div class="speaker-rows">`;
       }
       html += card(hit.s);
     }

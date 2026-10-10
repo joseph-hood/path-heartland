@@ -32,6 +32,20 @@ avoid jargon, and confirm before anything hard to undo.
 Preview: `python3 -m http.server -d site 8000`, then open http://localhost:8000. Check the page
 at phone width too. Look for console errors.
 
+**Live preview for the maintainer.** When a session changes anything under `site/`, publish a
+preview of the site as an Artifact so the maintainer can see it in the side panel, and do it
+before opening the PR:
+
+1. `python3 tools/build-preview.py <scratchpad>/preview` (it prints the supporting files).
+2. Publish `<scratchpad>/preview/index.html` with the Artifact tool, `root` set to
+   `<scratchpad>/preview` and every printed path in `files`.
+3. After each further change in the same session, rebuild and publish the same file path again so
+   the link stays the same. Put the preview link in your reply.
+
+The preview is private to whoever's session made it. The contact form can't send from inside it,
+which is expected. If the session has no Artifact tool, send screenshots of the page at desktop
+and phone width instead.
+
 ## Workflow
 
 - Never push directly to `main`. Make a branch, commit, push, and open a pull request with a short

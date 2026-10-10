@@ -1,10 +1,5 @@
 import { createMap } from "./map.js";
-import { esc, badge, linkPills, initials, dateParts, dateRange, isPast } from "./util.js";
-
-const load = (name) => fetch(`data/${name}.json`).then((r) => {
-  if (!r.ok) throw new Error(`${name}.json: ${r.status}`);
-  return r.json();
-});
+import { esc, badge, linkPills, dateParts, dateRange, isPast, load, renderFooterMembers } from "./util.js";
 
 const orgBadge = (org, logo = org.logo) =>
   badge({ logo, label: org.short, color: org.color, alt: `${org.name} logo` });
@@ -61,30 +56,7 @@ function renderMembers(orgs) {
     mapEl.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
-  document.getElementById("footer-members").innerHTML = orgs
-    .map((o) => `<li><a href="${esc(o.website)}" target="_blank" rel="noopener">${esc(o.name)}</a></li>`)
-    .join("");
-}
-
-function renderSpeakers(speakers) {
-  const grid = document.getElementById("speaker-grid");
-  if (!speakers.length) {
-    grid.innerHTML = `<div class="empty"><strong>Speaker profiles are on the way</strong>
-      We’re building a roster of speakers from across the region. Check back soon.</div>`;
-    return;
-  }
-  grid.innerHTML = speakers.map((s) => `
-    <article class="speaker-card">
-      ${badge({ logo: s.photo, label: initials(s.name), alt: s.name })}
-      <div>
-        <h3>${esc(s.name)}</h3>
-        <p class="speaker-role">${esc([s.role, s.org].filter(Boolean).join(" · "))}</p>
-        <p class="speaker-bio">${esc(s.bio)}</p>
-        ${s.topics?.length ? `<ul class="topics">${s.topics.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}
-        ${s.location || s.formats ? `<p class="speaker-meta">${esc([s.location, s.formats].filter(Boolean).join(" · "))}</p>` : ""}
-        <div class="link-row">${linkPills(s.links)}</div>
-      </div>
-    </article>`).join("");
+  renderFooterMembers(orgs);
 }
 
 function renderNews(items) {
@@ -112,7 +84,6 @@ function renderNews(items) {
 
 const sections = [
   ["orgs", renderMembers],
-  ["speakers", renderSpeakers],
   ["announcements", renderNews],
 ];
 for (const [name, render] of sections) {

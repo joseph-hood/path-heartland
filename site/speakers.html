@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speakers Bureau · PATH</title>
+  <meta name="description" content="Find a speaker: researchers, clinicians, advocates, and community leaders from across Oklahoma, Missouri, Kansas, and Arkansas.">
+  <meta name="theme-color" content="#C8361F">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://path-heartland.org/speakers.html">
+  <meta property="og:title" content="Speakers Bureau · PATH">
+  <meta property="og:description" content="A catalogue of psychedelic education and policy experts from across the Heartland.">
+  <meta property="og:image" content="https://path-heartland.org/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/speakers.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="PATH home">
+        <img src="assets/path-mark.svg" alt="" width="34" height="30">
+        <span>PATH</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="index.html#about">About</a>
+        <a href="index.html#members">Members</a>
+        <a href="index.html#events">Events</a>
+        <a href="speakers.html" aria-current="page">Speakers</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">Speakers Bureau</p>
+        <h1>Find a speaker</h1>
+        <p class="lede">A catalogue of experts from across the Heartland who are available to speak at events, classes, conferences, and community meetings. Search by name, topic, organization, or city.</p>
+        <div class="search-bar" role="search">
+          <label class="visually-hidden" for="speaker-search">Search speakers</label>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <input id="speaker-search" type="search" placeholder="Search by name, topic, organization, or city" autocomplete="off">
+        </div>
+        <p class="speaker-count" id="speaker-count" aria-live="polite"></p>
+      </div>
+    </section>
+    <div class="stripes" aria-hidden="true"></div>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <div id="speaker-list"></div>
+        <noscript><p>Turn on JavaScript to see the speaker list.</p></noscript>
+        <p class="speaker-request">Want to book one of these speakers, or suggest someone for the list? <a href="index.html#contact">Contact us</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="stripes" aria-hidden="true"></div>
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="assets/path-logo.svg" alt="PATH — Psychedelic Alliance of the Heartland" width="96" height="96">
+        <p>Psychedelic Alliance of the Heartland</p>
+      </div>
+      <div>
+        <h2 class="footer-heading">Members</h2>
+        <ul class="footer-links" id="footer-members"></ul>
+      </div>
+      <p class="footer-note">PATH and its member organizations focus on education, harm reduction, community, and policy reform. We do not provide, sell, or facilitate access to controlled substances.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -26,5 +26,31 @@
         "url": "https://www.chadvjohnsonphd.com/contact"
       }
     ]
+  },
+  {
+    "name": "Christine “Mooncat” Ziemer",
+    "credentials": "PhD",
+    "role": "Professor of Psychology, Missouri Western State University",
+    "org": "Psychedelic Society of Kansas City",
+    "location": "St. Joseph & Kansas City, MO",
+    "bio": "Tenured professor of psychology at Missouri Western State University, where she created original courses on psychedelics, including Psychedelic Science, which covers how these substances work in the brain, the legal landscape, and risk reduction and peer support. She founded the Psychedelic Educators Network and serves as executive director of the Psychedelic Society of Kansas City. A firm believer that education is harm reduction, she supports peer-support services such as the Fireside Project and Zendo Project and the Kansas City Psychedelic Integration Circle.",
+    "topics": [
+      "Psychedelic science",
+      "Psychedelic education",
+      "Harm reduction",
+      "Peer support & integration",
+      "Transpersonal psychology",
+      "Policy & legal issues"
+    ],
+    "links": [
+      {
+        "label": "Speaker profile",
+        "url": "https://psychedelicsoto.org/speaker/dr-christine-mooncat-ziemer/"
+      },
+      {
+        "label": "KCUR interview",
+        "url": "https://www.kcur.org/podcast/up-to-date/2025-10-18/kansas-citys-psychedelic-society-is-ready-to-change-minds-about-psilocybin"
+      }
+    ]
   }
 ]

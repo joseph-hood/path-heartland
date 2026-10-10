@@ -57,7 +57,7 @@ function renderSpeakers(all) {
       if (hit.letter !== letter) {
         if (letter) html += `</div></section>`;
         letter = hit.letter;
-        html += `<section class="letter-group"><h2 class="letter">${esc(letter)}</h2><div class="speaker-rows">`;
+        html += `<section class="letter-group"><h2 class="letter"><span>${esc(letter)}</span></h2><div class="speaker-rows">`;
       }
       html += card(hit.s);
     }

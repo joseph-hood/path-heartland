@@ -95,5 +95,42 @@
         "url": "mailto:hello@kellydundon.com"
       }
     ]
+  },
+  {
+    "name": "Angie Leek",
+    "credentials": "MA, LMFT, LPC-S, SEP",
+    "photo": "assets/speakers/angie-leek.webp",
+    "role": "Psychotherapist & clinical supervisor · Founder, Holos Counseling & the Holos Collective",
+    "location": "Fayetteville, AR",
+    "bio": "Licensed marriage and family therapist, licensed professional counselor, clinical supervisor, Somatic Experiencing Practitioner, and IFS-trained therapist with more than 20 years of experience, working from a trauma-informed and transpersonal framework. She provides psychedelic-assisted psychotherapy in a clinical research setting and has served as core faculty and advisor for Psychedelics Today’s VITAL training program. She founded Holos Counseling; the Holos Foundation, a nonprofit dedicated to supporting access to care; and the Holos Collective, a training and co-working hub for therapists. She regularly presents at continuing-education workshops and conferences, including MAPS Psychedelic Science.",
+    "topics": [
+      "Psychedelic integration",
+      "Psychedelic-assisted therapy",
+      "Ketamine-assisted therapy",
+      "Trauma",
+      "Spirituality & spiritual emergence",
+      "Somatic Experiencing",
+      "Internal Family Systems (IFS)",
+      "Ethics",
+      "Clinician training"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.angieleek.com/about"
+      },
+      {
+        "label": "Holos Collective",
+        "url": "https://theholoscollective.com"
+      },
+      {
+        "label": "Holos Foundation",
+        "url": "https://www.holosfound.org"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:angie@holoscounseling.com"
+      }
+    ]
   }
 ]

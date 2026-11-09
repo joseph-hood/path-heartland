@@ -93,5 +93,78 @@
         "url": "https://www.psychedelic-educators-network.com"
       }
     ]
+  },
+  {
+    "name": "Kelly Dundon",
+    "credentials": "LCSW",
+    "photo": "assets/speakers/kelly-dundon.webp",
+    "role": "Psychotherapist, supervisor & educator · Support Line Supervisor, Fireside Project",
+    "location": "Northwest Arkansas",
+    "bio": "Psychotherapist, supervisor, and educator based in Northwest Arkansas. In her private practice, she specializes in psychotherapy with adults and older adolescents, with an emphasis on complex trauma, neurodivergence, identity, and life transitions. Her work includes ketamine-assisted psychotherapy, psychedelic integration, and clinical research involving investigational psychedelic compounds. She also serves as a Support Line Supervisor with Fireside Project, where she trains and supports volunteers who provide emotional support and harm reduction to individuals navigating challenging psychedelic experiences. Her work bridges psychotherapy, psychedelic harm reduction, and community education, and she is committed to advancing accessible, compassionate, and evidence-informed approaches to psychedelic support and education. Kelly holds a Master of Social Work from the University of Arkansas and is in her second year of Somatic Experiencing training.",
+    "topics": [
+      "Psychedelic integration",
+      "Harm reduction",
+      "Ketamine-assisted therapy",
+      "Complex trauma",
+      "Neurodivergence",
+      "Clinical research",
+      "Somatic Experiencing",
+      "Community education"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://kellydundon.com/"
+      },
+      {
+        "label": "Fireside Project",
+        "url": "https://firesideproject.org/our-team"
+      },
+      {
+        "label": "Psychology Today",
+        "url": "https://www.psychologytoday.com/us/therapists/kelly-dundon-bella-vista-ar/1508265"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:hello@kellydundon.com"
+      }
+    ]
+  },
+  {
+    "name": "Angie Leek",
+    "credentials": "MA, LMFT, LPC-S, SEP",
+    "photo": "assets/speakers/angie-leek.webp",
+    "role": "Psychotherapist & clinical supervisor · Founder, Holos Counseling & the Holos Collective",
+    "location": "Fayetteville, AR",
+    "bio": "Licensed marriage and family therapist, licensed professional counselor, clinical supervisor, Somatic Experiencing Practitioner, and IFS-trained therapist with more than 20 years of experience, working from a trauma-informed and transpersonal framework. She provides psychedelic-assisted psychotherapy in a clinical research setting and has served as core faculty and advisor for Psychedelics Today’s VITAL training program. She founded Holos Counseling; the Holos Foundation, a nonprofit dedicated to supporting access to care; and the Holos Collective, a training and co-working hub for therapists. She regularly presents at continuing-education workshops and conferences, including MAPS Psychedelic Science.",
+    "topics": [
+      "Psychedelic integration",
+      "Psychedelic-assisted therapy",
+      "Ketamine-assisted therapy",
+      "Trauma",
+      "Spirituality & spiritual emergence",
+      "Somatic Experiencing",
+      "Internal Family Systems (IFS)",
+      "Ethics",
+      "Clinician training"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://www.angieleek.com/about"
+      },
+      {
+        "label": "Holos Collective",
+        "url": "https://theholoscollective.com"
+      },
+      {
+        "label": "Holos Foundation",
+        "url": "https://www.holosfound.org"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:angie@holoscounseling.com"
+      }
+    ]
   }
 ]

@@ -59,5 +59,40 @@
         "url": "https://www.psychedelic-educators-network.com"
       }
     ]
+  },
+  {
+    "name": "Kelly Dundon",
+    "credentials": "LCSW",
+    "role": "Psychotherapist, supervisor & educator · Support Line Supervisor, Fireside Project",
+    "location": "Northwest Arkansas",
+    "bio": "Psychotherapist, supervisor, and educator based in Northwest Arkansas. In her private practice, she specializes in psychotherapy with adults and older adolescents, with an emphasis on complex trauma, neurodivergence, identity, and life transitions. Her work includes ketamine-assisted psychotherapy, psychedelic integration, and clinical research involving investigational psychedelic compounds. She also serves as a Support Line Supervisor with Fireside Project, where she trains and supports volunteers who provide emotional support and harm reduction to individuals navigating challenging psychedelic experiences. Her work bridges psychotherapy, psychedelic harm reduction, and community education, and she is committed to advancing accessible, compassionate, and evidence-informed approaches to psychedelic support and education. Kelly holds a Master of Social Work from the University of Arkansas and is in her second year of Somatic Experiencing training.",
+    "topics": [
+      "Psychedelic integration",
+      "Harm reduction",
+      "Ketamine-assisted therapy",
+      "Complex trauma",
+      "Neurodivergence",
+      "Clinical research",
+      "Somatic Experiencing",
+      "Community education"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://kellydundon.com/"
+      },
+      {
+        "label": "Fireside Project",
+        "url": "https://firesideproject.org/our-team"
+      },
+      {
+        "label": "Psychology Today",
+        "url": "https://www.psychologytoday.com/us/therapists/kelly-dundon-bella-vista-ar/1508265"
+      },
+      {
+        "label": "Email",
+        "url": "mailto:hello@kellydundon.com"
+      }
+    ]
   }
 ]
